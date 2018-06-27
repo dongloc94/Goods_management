@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "server.js",
 	"scripts": {
+		"start":"node server.js",
 		"remove:dir-dist": "IF EXIST dist RMDIR /S /Q dist",
 		"create:dir-dist": "npm run remove:dir-dist && if not exist dist\\views mkdir dist\\views && if not exist dist\\assets mkdir dist\\assets",
 		"copy:views-dist": " xcopy  src\\views\\*.* dist\\views /e /i",
