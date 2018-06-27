@@ -1,0 +1,34 @@
+{
+	"post": 8000,
+	"database": {
+		"url": "localhost",
+		"post": 3306,
+		"user": "root",
+		"password": "",
+		"databaseName": "goods_mamagement",
+		"poolMax": 50,
+		"poolMin": 5,
+		"message": {
+			"connectErr": "Don't connect Database.",
+			"noResult": "No result.",
+			"queryErr": "Query failure.",
+			"querySuccess": "Query Success.",
+			"insertZeroRecordErr": "Number of records inserted is 0.",
+			"insertSuccess": "Insert success.",
+			"updateZeroRecordErr": "Number of records Updated is 0.",
+			"updateSuccess": "Update success.",
+			"deleteZeroRecordErr": "Number of records Deleted is 0.",
+			"deleteSuccess": "Delete success."
+		}
+	},
+	"httpCode": {
+		"ok": 200,
+		"created": 201,
+		"found": 302,
+		"unAuthorized": 401,
+		"notFound": 404,
+		"forbidden": 403,
+		"notAcceptable": 406,
+		"unknownError": 520
+	}
+}

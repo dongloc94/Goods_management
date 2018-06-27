@@ -1,0 +1,17 @@
+<script src="/assets/socket.io.js"></script>
+<script>
+	var product = io.connect('http://localhost:8000/product');
+	var category = io.connect('http://localhost:8000/category');
+
+	product.on('getProduct', function(data) {
+		console.log(data);
+	}).on('disconnect', function() {
+		console.log('Disconnected');
+	});
+
+	category.on('a message', function(data) {
+		console.log(data);
+	}).on('disconnect', function() {
+		console.log('Disconnected');
+	});
+</script>
